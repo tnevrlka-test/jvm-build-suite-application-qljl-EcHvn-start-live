@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-eiyj
+  namespace: jvm-build-jmju-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:b5f1aa5844b7328d367529aacb55473a3d527fdf08376351b35e1666bab442b1
+        name: container-image
+        resources: {}
+status: {}
